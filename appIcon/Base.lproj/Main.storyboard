@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,40 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HmX-XE-Dqq">
+                                <rect key="frame" x="66" y="220" width="243" height="80"/>
+                                <state key="normal" title="一键剪裁圆角图片"/>
+                                <connections>
+                                    <action selector="onClickToClicpsCornerImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LH0-TQ-YWc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64V-7Z-qlG">
+                                <rect key="frame" x="66" y="100" width="243" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="cK8-ar-lEe"/>
+                                </constraints>
+                                <state key="normal" title="一键剪裁logo"/>
+                                <connections>
+                                    <action selector="onClickToClicpsAppIcon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0tk-cA-cZs"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="64V-7Z-qlG" secondAttribute="trailing" constant="50" id="JtN-9K-LEC"/>
+                            <constraint firstItem="HmX-XE-Dqq" firstAttribute="height" secondItem="64V-7Z-qlG" secondAttribute="height" id="Kte-eK-s7W"/>
+                            <constraint firstItem="64V-7Z-qlG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="T3s-gT-OUh"/>
+                            <constraint firstItem="HmX-XE-Dqq" firstAttribute="leading" secondItem="64V-7Z-qlG" secondAttribute="leading" id="jzW-VI-r8d"/>
+                            <constraint firstItem="HmX-XE-Dqq" firstAttribute="top" secondItem="64V-7Z-qlG" secondAttribute="bottom" constant="40" id="kCB-EE-q5q"/>
+                            <constraint firstItem="HmX-XE-Dqq" firstAttribute="trailing" secondItem="64V-7Z-qlG" secondAttribute="trailing" id="yFd-RO-dbu"/>
+                            <constraint firstItem="64V-7Z-qlG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="zC7-xr-dlF"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
         </scene>
     </scenes>
 </document>

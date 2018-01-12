@@ -15,6 +15,8 @@
 		9D3510871F2C89170019E74C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D3510851F2C89170019E74C /* LaunchScreen.storyboard */; };
 		9D3510921F2C89170019E74C /* appIconTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3510911F2C89170019E74C /* appIconTests.m */; };
 		9D35109D1F2C89170019E74C /* appIconUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D35109C1F2C89170019E74C /* appIconUITests.m */; };
+		9D3510AB1F2C8A7D0019E74C /* 1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D3510AA1F2C8A7D0019E74C /* 1024.png */; };
+		9D3510B11F2EBB1F0019E74C /* UIImage+Extersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3510B01F2EBB1F0019E74C /* UIImage+Extersion.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		9D3510981F2C89170019E74C /* appIconUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = appIconUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D35109C1F2C89170019E74C /* appIconUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = appIconUITests.m; sourceTree = "<group>"; };
 		9D35109E1F2C89170019E74C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D3510AA1F2C8A7D0019E74C /* 1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1024.png; sourceTree = "<group>"; };
+		9D3510AF1F2EBB1F0019E74C /* UIImage+Extersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extersion.h"; sourceTree = "<group>"; };
+		9D3510B01F2EBB1F0019E74C /* UIImage+Extersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extersion.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +106,13 @@
 		9D3510761F2C89170019E74C /* appIcon */ = {
 			isa = PBXGroup;
 			children = (
+				9D3510AA1F2C8A7D0019E74C /* 1024.png */,
 				9D35107A1F2C89170019E74C /* AppDelegate.h */,
 				9D35107B1F2C89170019E74C /* AppDelegate.m */,
 				9D35107D1F2C89170019E74C /* ViewController.h */,
 				9D35107E1F2C89170019E74C /* ViewController.m */,
+				9D3510AF1F2EBB1F0019E74C /* UIImage+Extersion.h */,
+				9D3510B01F2EBB1F0019E74C /* UIImage+Extersion.m */,
 				9D3510801F2C89170019E74C /* Main.storyboard */,
 				9D3510831F2C89170019E74C /* Assets.xcassets */,
 				9D3510851F2C89170019E74C /* LaunchScreen.storyboard */,
@@ -248,6 +256,7 @@
 			files = (
 				9D3510871F2C89170019E74C /* LaunchScreen.storyboard in Resources */,
 				9D3510841F2C89170019E74C /* Assets.xcassets in Resources */,
+				9D3510AB1F2C8A7D0019E74C /* 1024.png in Resources */,
 				9D3510821F2C89170019E74C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D35107F1F2C89170019E74C /* ViewController.m in Sources */,
+				9D3510B11F2EBB1F0019E74C /* UIImage+Extersion.m in Sources */,
 				9D35107C1F2C89170019E74C /* AppDelegate.m in Sources */,
 				9D3510791F2C89170019E74C /* main.m in Sources */,
 			);
@@ -427,6 +437,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = appIcon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Marshal.appIcon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -438,6 +449,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = appIcon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Marshal.appIcon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -509,6 +521,7 @@
 				9D3510A31F2C89170019E74C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D3510A41F2C89170019E74C /* Build configuration list for PBXNativeTarget "appIconTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +530,7 @@
 				9D3510A61F2C89170019E74C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D3510A71F2C89170019E74C /* Build configuration list for PBXNativeTarget "appIconUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +539,7 @@
 				9D3510A91F2C89170019E74C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
