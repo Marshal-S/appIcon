@@ -26,12 +26,12 @@
     [self drawInRect:CGRectMake(0, 0, size, size)];
     UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    CGContextRelease(ctx);
+
     NSData *imageData = UIImagePNGRepresentation(newImage);
     if (!imageData) {
         return;
     }
-    NSString *path = @"/Users/wangluxian/Desktop/appIcons";
+    NSString *path = @"/Users/apple/Desktop/appIcons";
     NSFileManager *manager = [NSFileManager defaultManager];
     if (![manager fileExistsAtPath:path]) {
         [manager createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:nil];
